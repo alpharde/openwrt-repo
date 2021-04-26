@@ -40,6 +40,7 @@ endef
 define Package/n2n-supernode
   $(call Package/n2n/Default)
   TITLE+= server (supernode)
+  DEPENDS+=+libcap
 endef
 
 define Package/n2n-edge/description
